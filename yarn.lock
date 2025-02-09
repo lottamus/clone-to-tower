@@ -1737,7 +1737,7 @@ __metadata:
     react-dom: "npm:^19.0.0"
     shadcn: "npm:canary"
     tailwind-merge: "npm:^3.0.1"
-    tailwindcss: "npm:^4.0.4"
+    tailwindcss: "npm:^4.0.5"
     tailwindcss-animate: "npm:^1.0.7"
     typescript: "npm:^5.7.3"
     vite: "npm:^6.1.0"
@@ -3741,10 +3741,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.0.4, tailwindcss@npm:^4.0.4":
+"tailwindcss@npm:4.0.4":
   version: 4.0.4
   resolution: "tailwindcss@npm:4.0.4"
   checksum: 10/19b18e2645df795b3f3320cb86cdfb948c895562694404f6ad861f168f01c4a7cabf229099eec644e245e63fef21dcef2c8e1fdf497ac87060c5ceab589b2bf4
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "tailwindcss@npm:4.0.5"
+  checksum: 10/11b7aa6f0673e70a8c0397de89e00f3a4d8367ecf9edef710c427707f3cace81cd98de63dcd0335e9de8408b4e09e39d2c8f77ee7f56c55460700c58b7c4f351
   languageName: node
   linkType: hard
 
