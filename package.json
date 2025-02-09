@@ -1,0 +1,54 @@
+{
+  "name": "clone-in-tower",
+  "version": "1.0.0",
+  "description": "Clone a repository in Tower from GitHub",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lottamus/clone-in-tower.git"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "yarn build.chrome && yarn build.firefox",
+    "build.chrome": "vite build --config vite.config.chrome.ts",
+    "build.firefox": "vite build --config vite.config.firefox.ts",
+    "dev": "yarn dev.chrome",
+    "dev.chrome": "yarn build.chrome --watch --mode=development",
+    "dev.firefox": "yarn build.firefox --watch --mode=development",
+    "format": "biome format --write ./**/*.{ts,js,json}",
+    "lint": "biome check .",
+    "lint.fix": "biome check --write .",
+    "shadcn": "shadcn"
+  },
+  "dependencies": {
+    "@radix-ui/react-label": "^2.1.2",
+    "@radix-ui/react-radio-group": "^1.2.3",
+    "@radix-ui/react-slot": "^1.1.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss-animate": "^1.0.7",
+    "webextension-polyfill": "^0.12.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@crxjs/vite-plugin": "^2.0.0-beta.30",
+    "@tailwindcss/vite": "^4.0.4",
+    "@types/chrome": "^0.0.304",
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@types/webextension-polyfill": "^0.12.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "fs-extra": "^11.3.0",
+    "shadcn": "canary",
+    "tailwindcss": "^4.0.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "packageManager": "yarn@4.6.0"
+}

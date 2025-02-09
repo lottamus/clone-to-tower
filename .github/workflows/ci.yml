@@ -1,0 +1,32 @@
+name: Build Extensions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+
+      - name: Install dependencies
+        uses: ./.github/actions/yarn-nm-install
+
+      - name: Build Extensions
+        run: yarn build
+
+      - name: Upload extension artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: clone-in-tower
+          path: dist
