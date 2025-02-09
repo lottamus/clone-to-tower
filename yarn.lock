@@ -413,9 +413,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@crxjs/vite-plugin@npm:^2.0.0-beta.30":
-  version: 2.0.0-beta.30
-  resolution: "@crxjs/vite-plugin@npm:2.0.0-beta.30"
+"@crxjs/vite-plugin@npm:^2.0.0-beta.31":
+  version: 2.0.0-beta.31
+  resolution: "@crxjs/vite-plugin@npm:2.0.0-beta.31"
   dependencies:
     "@rollup/pluginutils": "npm:^4.1.2"
     "@webcomponents/custom-elements": "npm:^1.5.0"
@@ -432,7 +432,7 @@ __metadata:
     react-refresh: "npm:^0.13.0"
     rollup: "npm:2.79.2"
     rxjs: "npm:7.5.7"
-  checksum: 10/802fe336def824b1dc0ed761108b9eb19c2e4be6ead6152fb7153d98536830c9114d03bc5b4311ea62f1095670011b241ade8a368af307e7458bb9922af43ea8
+  checksum: 10/5a34e251f38d661ffbb9ac0310ff177e1c25a9ae0a59c15997b2cda345ffda64435c6f38cac91aa75a5ee5a97a73ea852d2e994ee7b4ce52ba2246de09d27300
   languageName: node
   linkType: hard
 
@@ -1718,7 +1718,7 @@ __metadata:
   resolution: "clone-in-tower@workspace:."
   dependencies:
     "@biomejs/biome": "npm:1.9.4"
-    "@crxjs/vite-plugin": "npm:^2.0.0-beta.30"
+    "@crxjs/vite-plugin": "npm:^2.0.0-beta.31"
     "@radix-ui/react-label": "npm:^2.1.2"
     "@radix-ui/react-radio-group": "npm:^1.2.3"
     "@radix-ui/react-slot": "npm:^1.1.2"
